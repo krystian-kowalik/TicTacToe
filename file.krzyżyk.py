@@ -12,9 +12,11 @@ def initialize_first_player():
     name_dict = {0: 'computer',
                  1: 'user'}
     print("Begin: ", name_dict[first_player])
+    return first_player
 
+current_player = None
 
-initialize_first_player()
+current_player = initialize_first_player()
 print_board()
 
 
