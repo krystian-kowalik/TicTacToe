@@ -15,6 +15,15 @@ def initialize_first_player():
     return first_player
 
 current_player = None
+user_mark = None
+def generate_user_mark():
+    user_mark = random.randint(0, 1)
+    name_dict = {0: 'cross',
+                 1: 'circle'}
+    user_mark = name_dict[user_mark]
+    return(user_mark)
+    
+
 
 current_player = initialize_first_player()
 print_board()
